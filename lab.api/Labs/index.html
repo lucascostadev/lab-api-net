@@ -2,18 +2,21 @@
 <head>
 </head>
 <body>
-    <h1>HELLO WORLD!</h1>
-    <script>
-        setTimeout(function () {
 
-            fetch("https://localhost:44353/WeatherForecast")
-                .then(response => response.json())
-                .then(function (response) {
-                    console.log(JSON.stringify(response));
-                    document.body.innerHTML = JSON.stringify(response);
-                });
+    <form>
+        <div>
+            <label>CPF:</label>
+            <input type="text" name="CPF" id="CPF" onchange="mudancaCpf(this);" />
+        </div>
+        <div>
+            <button id="submit" disabled>Enviar</button>
+        </div>
+    </form>
 
-        }, 50000);
-    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./src/index.js" type="text/javascript"></script>
+
 </body>
 </html>
