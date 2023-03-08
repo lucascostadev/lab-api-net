@@ -1,3 +1,4 @@
+using lab.api.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace lab.api.Controllers
@@ -8,8 +9,8 @@ namespace lab.api.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        };
 
         private readonly ILogger<WeatherForecastController> _logger;
 

@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>HELLO WORLD!</h1>
+    <script>
+        setTimeout(function () {
+
+            fetch("https://localhost:44353/WeatherForecast")
+                .then(response => response.json())
+                .then(function (response) {
+                    console.log(JSON.stringify(response));
+                    document.body.innerHTML = JSON.stringify(response);
+                });
+
+        }, 50000);
+    </script>
+</body>
+</html>

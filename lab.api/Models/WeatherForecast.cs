@@ -1,4 +1,4 @@
-namespace lab.api
+namespace lab.api.Models
 {
     public class WeatherForecast
     {
